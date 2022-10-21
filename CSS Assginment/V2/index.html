@@ -1,0 +1,298 @@
+<!--
+Update your HTML coding to add more coding we have learned since the first 
+assignment (within Section A instructions – 15 points) 🗸
+ 
+B.  Create (3) HTML webpages to link within this website (Section B) – 15 points). 
+ 
+C.  Implement (3) CSS methods (inline, embedded, and external) in a manner which 
+will not over-rule any of the other CSS coding involving various background 
+colors, font colors, fonts, images, etc. (Section C instructions – 30 points) 🗸
+ 
+D.  Develop (2) more CSS external files for this website. (Section D – 30 points) 🗸
+ 
+E.  Answer the questions within a Word document of how to efficiently utilize your 
+creations to manage this website (within Section E instructions – 10 points). 🗸
+
+        1. How would you easily change the look of your website by using a different CSS 
+        file?  Refer to your specific file names utilized within your assignment. 
+
+            - I used variables in my stylesheet.css, i used --primary, --secondary, and --tertiary
+            to quickly change the color scheme of my web page
+ 
+        2. How does using CSS assist you and/or a team of programmers to efficiently 
+        manage a website and customer requests? 
+
+            - since it CSS cascades to the affected web pages, it is really easy to implement and try
+ 
+        3. What are (5) benefits to implementing CSS?  Which CSS method overwrites all 
+        other methods of CSS? 
+
+              1. Improved looks on web page
+              2. Easy to change multiple elements
+              3. Affects multiple web pages 
+              4. Faster page speed 
+              5. Easier optimization
+
+              Inline -> Embedded -> External
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        h1
+        {
+            text-align: center;
+            border-radius: 10px;
+        }
+        h2
+        {
+            font-size: medium;
+        }
+    </style>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<header>
+        <!--Navigation Bar-->
+    <div class="nav-bar">
+        <nav>
+            <table class="nav-table">
+                <tr>
+                    <td class="nav-button">
+                        <a href="#About-Me">About Me</a>
+                    </td>
+                    <td class="nav-button">
+                            <a href="#Resume">Resume</a>
+                    </td>
+                    <td class="nav-button">
+                            <a href="#Project">Projects</a>
+                    </td>
+                    <td class="nav-button">
+                            <a href="#Contact-Me">Contact Me</a>
+                    </td>
+                    <td class="nav-button">
+                            <a href="blog.html">Blog</a>
+                    </td>    
+                </tr>
+            </table>
+        </nav>
+    </div>
+
+</header>
+<body>
+
+
+    <!--Overview Video-->
+    <div>
+        <iframe width="100vw" src="https://www.youtube.com/watch?v=PFMHNsYjHXA" frameborder="0"></iframe>
+    </div>
+
+
+
+    <!--Quote-->
+    <div class="section">
+        <blockquote>
+            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Cupiditate iste necessitatibus non minima quam consequatur 
+            inventore eos, nesciunt laborum autem animi voluptatum 
+            labore accusantium repellat beatae perspiciatis distinctio 
+            consequuntur culpa!"" - Some Latin Guy.
+        </blockquote>
+    </div>
+    
+
+    
+    <!--About Me-->
+    <div class="section">
+        <h1 id="About-Me">About Me</h1>
+        <!--<img src="img/Head shot.jpg" alt="Headshot.jpeg" width="100px" style="border-radius: 40%; border: 5px solid; float: left; margin: 20px; margin-right: 30px;">-->
+        <blockquote>
+            Hello my name is Michael Cardoso and I am an inspiring Game Developer.
+            This channel is used to showcase my personal game development projects and ideas!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis obcaecati repellat
+            ipsa ad tempore commodi magnam non suscipit quos sit pariatur optio facilis 
+            perspiciatis deserunt quia, nihil dolores facere ullam.
+        </blockquote>
+    </div> 
+
+    
+
+    <!--Resume-->
+    <div class="section">
+        <h1 id="Resume">Resume</h1>
+        <table class="resume-table">
+            <tr>
+                <td colspan="2">
+                    <h2>Current Work</h2>
+                    <li>
+                        <ol>Na Li</ol>
+                        <ol>JC Construction</ol>
+                    </li>
+                </td>
+                <td rowspan="2">
+                    <h2>Skills</h2>
+                    <li>
+                        <ol>hard working (21 credits in one semester)</ol>
+                        <ol>math wiz (A's in all my math classes)</ol>
+                        <ol></ol>
+                        <ol></ol>
+                        <ol></ol>
+                        <ol></ol>
+                        <ol></ol>
+                        <ol></ol>
+                    </li>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2>Education</h2>
+                    <li>
+                        <ol>LSC</ol>
+                        <ol>PVAMU</ol>
+                        <ol>LSC</ol>
+                    </li>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h2>Languages</h2>
+                    <li>
+                        <ul>C++</ul>
+                        <ul>C#</ul>
+                        <ul>Python</ul>
+                        <ul>HTML</ul>
+                    </li>
+                </td>
+                <td>
+                    <h2>Engines</h2>
+                    <li>
+                        <ul>Unity</ul>
+                        <ul>Unreal 4/5</ul>
+                    </li>
+                </td>
+                <td>
+                    <h2>Extra Curricular</h2>
+                    <li>
+                        <ul>SHPE (social media manager)</ul>
+                        <ul>CS Club (president)</ul>
+                        <ul>Robotics Club (member)</ul>
+                        <ul>tabletop Club (member)</ul>
+                    </li>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+    <!--Projects-->
+    <div class="section">
+        <h1 id="Project">Project</h1>
+        <table class="project-table">
+            <tr>
+                <td>
+                    <a href="https://github.com/Xlesiai/Kishotenketsu-Patch-it-Later">
+                        <img style="width: 100px;" src="img/PIL.png" alt="img-Kishotenketsu">
+                    </a>
+                </td>
+                <td>
+                    Kishotenketsu
+                    description
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/Xlesiai/Ikea-Level-Design">
+                        <img style="width: 100px;" src="img/ikea.png" alt="img-Ikea">
+                    </a>
+                </td>
+                <td>
+                    Ikea
+                    description 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/Xlesiai/Fire-Temple-Level-Design">
+                        <img style="width: 100px;" src="img/Fire.png" alt="img-Fire Temple">
+                    </a>
+                </td>
+                <td>
+                    Fire Temple
+                    description 
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+    <!--Personal Project-->
+    <div class="section">
+        <h1>Personal Project</h1>
+        <table class="project-table">
+            <tr>
+                <td>
+                    <a href="https://github.com/Xlesiai/Ghost-Chess">
+                        <img style="width: 100px;" src="img/Ghost Chess.png" alt="img-Ghost Chess">
+                    </a>
+                </td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/Xlesiai/Wizard-Battles">
+                        <img style="width: 100px;" src="img/Wizard.png" alt="img-Wizard Battles">
+                    </a>
+                </td>
+                <td>description</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="https://github.com/Xlesiai/The-Land-of-Zov">
+                        <img style="width: 100px;" src="img/Land of Zov.jpg" alt="img-The Land of Zov">
+                    </a>
+                </td>
+                <td>description</td>
+            </tr>
+        </table>
+    </div>
+
+    
+
+    <!--Contact Me-->
+    <div class="section">
+        <h1 id="Contact-Me">Contact Me</h1>
+        <table class="contact-table">
+            <tr>
+                <td>
+                    <a href="mailto:Nuxglwk.Xlesiai@gmail.com">
+                        <img style="width: 50px" src="https://img.icons8.com/ios-glyphs/344/circled-envelope.png" alt="Email">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/Xlesiai">
+                        <img style="width: 50px" src="https://img.icons8.com/ios-glyphs/344/github.png" alt="Github">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.linkedin.com/in/michael-cardoso-5b658416b/">
+                        <img style="width: 50px" src="https://img.icons8.com/ios-glyphs/344/linkedin-circled--v1.png" alt="Linkedin">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://www.youtube.com/channel/UCdG9FJTgxzhOv5zokt1O12Q">
+                        <img style="width: 50px" src="https://img.icons8.com/ios-glyphs/344/youtube-play.png" alt="YouTube">
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

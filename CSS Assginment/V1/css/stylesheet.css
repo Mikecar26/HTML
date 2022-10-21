@@ -1,0 +1,74 @@
+/* Color Palette 1
+    #191423
+    #37234b
+    #784b5f
+    #b95f69
+    #ebcdc3 - #e0b8b1
+*/
+/* Color Palette 2
+    #464545
+    #fefcf9
+    #ebdada
+    #8caba8
+    #a2798f
+*/
+/* Variables*/
+:root
+{
+    --primary: #464545;
+    --secondary: #fefcf9;
+    --tertiary: #a2798f;
+    --quaternary: #ebdada;
+    --quinary: #8caba8;
+}
+body
+{
+    background-color: var(--primary);
+}
+h1
+{
+    font-family: Verdana, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5, h6
+{
+    border: 1px;
+}
+
+#header
+{
+    border-radius: 5px;
+    padding-bottom: 70px;
+    background-color: var(--secondary);
+}
+#nav
+{
+    display: block;
+    background-color: var(--secondary);
+    padding: 5px;
+}
+#nav a
+{
+    float: left;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+nav a:link, a:visited
+{
+    color: black;
+    padding: 5px;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-style: normal;
+}
+nav a:hover
+{
+    background-color: var(--tertiary);
+}
+.header
+{
+    background-color: var(--tertiary);
+}
+blockquote
+{
+    color: var(--quinary);
+}
