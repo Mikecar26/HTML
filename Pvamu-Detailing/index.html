@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: times-new-roman;
+    }
+
+    /* Header */ 
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #ff0000;
+      position: sticky;
+      top: 0;
+      width: 100%;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #ff0000;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* IS */
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 14px;
+      border: 2px solid #ccc;
+      margin-top: 9px;
+      margin-bottom: 13px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #FF0000;
+      color: white;
+      padding: 14px 18px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a048;
+    }
+
+    /* Area for Contact */
+    .container {
+      border-radius: 4px;
+      background-color: #6C6868;
+      padding: 11px;
+    }
+
+    /* Columns vertical side by side */
+    .column {
+      float: left;
+      width: 50%;
+      margin-top: 7px;
+      padding: 21px;
+    }
+
+    /* Blank spot after C1 */
+    .row:after {
+      content: "Marc";
+      display: table;
+      clear: both;
+    }
+
+    /* When under 600px, the two will not overlap  */
+    @media screen and (max-width: 600px) {
+
+      .column,
+      input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="index.html"><span style = "float:right;"><img src="img/logo.png" alt="logo of the website" width="110"></span></a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">Who We Are</a></li>
+    <li><a href="Services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="FAQ.html">FAQs</a></li>
+    <li><a href="Review-Page.html">Reviews</a><li>
+  </ul>
+
+  <div style="padding:18px; margin-top:28px; background-color:#FFFFFF; height:1150px;">
+
+    <p>
+      <center><img src="img/logo.png" width="400" alt="Photo of Logo"></center>
+    </p>
+    <h1>
+      <center>PVAMU Detailing</center>
+    </h1>
+    <h2>Your Waller County Detailing Specialists</h2>
+    <h3>Your car is cared for as if it were our own.</h3>
+
+    <p>
+      At PVAMU Detailing, we do not take shortcuts. We cater to any of your needs and provide attention to detail with
+      every service you wish to add on. We aim to inform and teach our clients how to best manage both interior and
+      exterior of their vehicles. Looking to self-detail your vehicle between appointments? No worries! Ask any of our
+      specialists for any advice regarding your vehicle. We give you the knowledge tailored for you and your car!
+    </p>
+
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Get in Touch with Us!</h2>
+      <p>Stop by to check out our area of business or leave us a message:</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.8865711987205!2d-95.99180838575654!3d30.097434723024165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646cbf3e41f8ec9%3A0x2e8a25ce50cf4243!2sS.R.%20Collins%20Engineering%20Building%2C%20D.W.%20Martin%20Street%2C%20Prairie%20View%2C%20TX%2077445!5e0!3m2!1sen!2sus!4v1667834310744!5m2!1sen!2sus" style="width:100%" height= "526px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="column">
+        <form action="action_page.php">
+            <!--Name-->
+            <label for="fname">Name</label>
+            <input type="text" id="name" name="firstname" placeholder="First Name">
+            <input type="text" id="name" name="lastname" placeholder="Last Name (not required)">
+            <!--Phone Number-->
+            <label for="number">Phone Number</label>
+            <input type="text" id="number" name="phonenumber" placeholder="Best number for contact...">
+            <!--Service-->
+            <label for="service">Service</label>
+            <select id="service" name="service">
+                <option value="Window Tint">Window Tint</option>
+                <option value="Car Paint/Wrap">Car Paint/Wrap</option>
+                <option value="Tire Shine / Rim Polish">Tire Shine / Rim Polish</option>
+                <option value="Grimes">Grimes</option>
+                <option value="Car Wash">Car Wash</option>
+                <option value="Full Interior Cleaning">Full Interior Cleaning</option>
+                <option value="Headlight Restoration">Headlight Restoration</option>
+                <option value="Other">Other</option>
+            </select>
+            <!--Comments-->
+            <label for="comments">Comments</label>
+            <textarea id="comment" name="comment"
+                placeholder="Any additional information requested or anything we should know?"
+                style="height:165px">
+            </textarea>
+            <!--Submit-->
+            <input type="submit" value="GET QUOTE">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+
+</html>

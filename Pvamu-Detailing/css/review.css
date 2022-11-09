@@ -1,0 +1,59 @@
+/*Review Section*/
+  #Header{
+    font-size: 50px;
+    background-color: red;
+    color: black;
+    text-align: center;
+    margin: 0;
+  }
+  #Reviews {
+    padding: 60px;
+    background-color: green;
+    border-radius: 100px;
+
+  }
+  .Review {
+    font-size: 30px;
+  }
+
+  .top {
+    display: flex;
+  }
+
+  
+  .Name {
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  .Rating {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+
+  .Desc {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+
+/*Submission Section*/
+  #Submission H2 {
+    font-size: 50px;
+    background-color: grey;
+    color: black;
+    text-align: center;
+  }
+
+  .spacing {
+    margin-left: 10px;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 21px;
+    padding-top: 0px;
+    font-size: 25px;
+  }

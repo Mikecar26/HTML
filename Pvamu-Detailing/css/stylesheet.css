@@ -1,0 +1,38 @@
+/* Creates variables for easy color changing*/
+  :root{
+    --primary: #FFF;
+    --secondary: #F00;
+    --tertiary: #000;
+  } 
+
+/*Navigation*/
+  #Nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--secondary);
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+  #Nav li {
+    float: left;
+  }
+
+  #Nav li a {
+    display: block;
+    color: var(--primary);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  #Nav li a:hover:not(.active) {
+    background-color: var(--tertiary);
+  }
+  
+  #Nav .active {
+    background-color: var(--secondary);
+  }
